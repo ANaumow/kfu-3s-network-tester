@@ -32,15 +32,16 @@ public class Test {
         List<String> answersList = new ArrayList<>(questionList.size());
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < questionList.size(); i++) {
-            System.out.println(questionList.get(i).getQuestion());
+            System.out.println(i + ") " + questionList.get(i).getQuestion());
             answersList.add(scanner.nextLine());
         }
 
         for (int i = 0; i < questionList.size(); i++) {
             System.out.println("---------");
-            System.out.println(questionList.get(i).getQuestion());
+            System.out.println(i + ") " + questionList.get(i).getQuestion());
             System.out.println("your answers are:");
             System.out.println(answersList.get(i));
+            System.out.println("answers are:");
             System.out.println(questionList.get(i).getAnswers());
         }
 
